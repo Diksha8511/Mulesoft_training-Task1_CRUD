@@ -5,3 +5,4 @@ cursor = connection.cursor()
 
 # query to create table
 createTableCommand = "CREATE TABLE IF NOT EXISTS details (name TEXT, actor TEXT, actress TEXT, director TEXT, yearOfRelease INTEGER)"
+cursor.execute(createTableCommand)
