@@ -5,3 +5,7 @@ cursor = connection.cursor()
 
 #update query
 updateCommand = "UPDATE details SET name = 'test'"
+
+# execute method fires the query that we pass as a parameter
+cursor.execute(updateCommand)
+connection.commit()
