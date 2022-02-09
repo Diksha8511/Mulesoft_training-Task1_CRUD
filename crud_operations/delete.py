@@ -4,4 +4,8 @@ connection = sqlite3.connect('../movies.db')   # it creates the database
 cursor = connection.cursor()
 
 #delete query
-updateCommand = "DELETE FROM details WHERE name = 'test'"
+deleteCommand = "DELETE FROM details WHERE name = 'test'"
+
+# execute method fires the query that we pass as a parameter
+cursor.execute(deleteCommand)
+connection.commit()
