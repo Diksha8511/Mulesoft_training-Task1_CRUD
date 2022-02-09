@@ -5,3 +5,6 @@ cursor = connection.cursor()
 
 #select query
 selectCommand = "SELECT * FROM details"
+
+# execute method fires the query that we pass as a parameter
+cursor.execute(selectCommand)
